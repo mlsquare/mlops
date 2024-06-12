@@ -1,0 +1,161 @@
+[
+  {
+    "objectID": "a.html",
+    "href": "a.html",
+    "title": "Whole game",
+    "section": "",
+    "text": "Our goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.",
+    "crumbs": [
+      "Whole game"
+    ]
+  },
+  {
+    "objectID": "a-01.html",
+    "href": "a-01.html",
+    "title": "1  Data visualization",
+    "section": "",
+    "text": "1.1 Introduction\nR has several systems for making graphs, but ggplot2 is one of the most elegant and most versatile. ggplot2 implements the grammar of graphics, a coherent system for describing and building graphs. With ggplot2, you can do more and faster by learning one system and applying it in many places.\nThis chapter will teach you how to visualize your data using ggplot2. We will start by creating a simple scatterplot and use that to introduce aesthetic mappings and geometric objects – the fundamental building blocks of ggplot2. We will then walk you through visualizing distributions of single variables as well as visualizing relationships between two or more variables. We’ll finish off with saving your plots and troubleshooting tips.",
+    "crumbs": [
+      "Whole game",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data visualization</span>"
+    ]
+  },
+  {
+    "objectID": "a-01.html#introduction",
+    "href": "a-01.html#introduction",
+    "title": "1  Data visualization",
+    "section": "",
+    "text": "“The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey",
+    "crumbs": [
+      "Whole game",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data visualization</span>"
+    ]
+  },
+  {
+    "objectID": "a-01.html#summary",
+    "href": "a-01.html#summary",
+    "title": "1  Data visualization",
+    "section": "1.2 Summary",
+    "text": "1.2 Summary\nIn this chapter, you’ve learned the basics of data visualization with ggplot2. We started with the basic idea that underpins ggplot2: a visualization is a mapping from variables in your data to aesthetic properties like position, color, size and shape. You then learned about increasing the complexity and improving the presentation of your plots layer-by-layer. You also learned about commonly used plots for visualizing the distribution of a single variable as well as for visualizing relationships between two or more variables, by leveraging additional aesthetic mappings and/or splitting your plot into small multiples using faceting.\nWe’ll use visualizations again and again throughout this book, introducing new techniques as we need them as well as do a deeper dive into creating visualizations with ggplot2 in Chapter 3 through ?sec-communication.\nWith the basics of visualization under your belt, in the next chapter we’re going to switch gears a little and give you some practical workflow advice. We intersperse workflow advice with data science tools throughout this part of the book because it’ll help you stay organized as you write increasing amounts of R code.",
+    "crumbs": [
+      "Whole game",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data visualization</span>"
+    ]
+  },
+  {
+    "objectID": "a-02.html",
+    "href": "a-02.html",
+    "title": "2  Workflow: basics",
+    "section": "",
+    "text": "2.1 Summary\nNow that you’ve learned a little more about how R code works, and some tips to help you understand your code when you come back to it in the future. In the next chapter, we’ll continue your data science journey by teaching you about dplyr, the tidyverse package that helps you transform data, whether it’s selecting important variables, filtering down to rows of interest, or computing summary statistics.",
+    "crumbs": [
+      "Whole game",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workflow: basics</span>"
+    ]
+  },
+  {
+    "objectID": "b.html",
+    "href": "b.html",
+    "title": "Visualize",
+    "section": "",
+    "text": "After reading the first part of the book, you understand (at least superficially) the most important tools for doing data science. Now it’s time to start diving into the details. In this part of the book, you’ll learn about visualizing data in further depth.\nThese three chapters get you started in the world of visualization, but there is much more to learn. The absolute best place to learn more is the ggplot2 book: ggplot2: Elegant graphics for data analysis. It goes into much more depth about the underlying theory, and has many more examples of how to combine the individual pieces to solve practical problems. Another great resource is the ggplot2 extensions gallery https://exts.ggplot2.tidyverse.org/gallery/. This site lists many of the packages that extend ggplot2 with new geoms and scales. It’s a great place to start if you’re trying to do something that seems hard with ggplot2.",
+    "crumbs": [
+      "Visualize"
+    ]
+  },
+  {
+    "objectID": "b-01.html",
+    "href": "b-01.html",
+    "title": "3  Layers",
+    "section": "",
+    "text": "3.1 Introduction\nWe will not cover every single function and option for each of these layers, but we will walk you through the most important and commonly used functionality provided by ggplot2 as well as introduce you to packages that extend ggplot2.",
+    "crumbs": [
+      "Visualize",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Layers</span>"
+    ]
+  },
+  {
+    "objectID": "b-01.html#introduction",
+    "href": "b-01.html#introduction",
+    "title": "3  Layers",
+    "section": "",
+    "text": "3.1.1 Prerequisites",
+    "crumbs": [
+      "Visualize",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Layers</span>"
+    ]
+  },
+  {
+    "objectID": "b-02.html",
+    "href": "b-02.html",
+    "title": "4  Exploratory data analysis",
+    "section": "",
+    "text": "4.1 Introduction\nThis chapter will show you how to use visualization and transformation to explore your data in a systematic way, a task that statisticians call exploratory data analysis, or EDA for short. EDA is an iterative cycle. You:",
+    "crumbs": [
+      "Visualize",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exploratory data analysis</span>"
+    ]
+  },
+  {
+    "objectID": "b-02.html#introduction",
+    "href": "b-02.html#introduction",
+    "title": "4  Exploratory data analysis",
+    "section": "",
+    "text": "Generate questions about your data.\nSearch for answers by visualizing, transforming, and modelling your data.\nUse what you learn to refine your questions and/or generate new questions.",
+    "crumbs": [
+      "Visualize",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exploratory data analysis</span>"
+    ]
+  },
+  {
+    "objectID": "b-02.html#summary",
+    "href": "b-02.html#summary",
+    "title": "4  Exploratory data analysis",
+    "section": "4.2 Summary",
+    "text": "4.2 Summary\nIn this chapter you’ve learned a variety of tools to help you understand the variation within your data. You’ve seen techniques that work with a single variable at a time and with a pair of variables. This might seem painfully restrictive if you have tens or hundreds of variables in your data, but they’re the foundation upon which all other techniques are built.\nIn the next chapter, we’ll focus on the tools we can use to communicate our results.",
+    "crumbs": [
+      "Visualize",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exploratory data analysis</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MLOps: Principles & Practices",
+    "section": "",
+    "text": "Welcome\nIntro to MLOps\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "MLOps: Principles & Practices",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.\nOur goal in this part of the book is to give you a rapid overview of the main tools of data science: importing, tidying, transforming, and visualizing data, as shown in ?fig-ds-whole-game. We want to show you the “whole game” of data science giving you just enough of all the major pieces so that you can tackle real, if simple, datasets. The later parts of the book will hit each of these topics in more depth, increasing the range of data science challenges that you can tackle.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Write the preface",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction to the the book. Not preface",
+    "crumbs": [
+      "Introduction"
+    ]
+  }
+]

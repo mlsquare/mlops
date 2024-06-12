@@ -1,0 +1,82 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "MLOps: Principles & Practices"
+  reader-mode: true
+
+  page-footer:
+    left: |
+      MLOps under prep.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a> with <a href="https://github.com/hadley/r4ds">r4ds</a> theme.
+  
+  cover-image: mlops-logo.png
+  favicon: mlops-logo.png
+  site-url: https://github.com/mlsquare/mlops
+  repo-url: https://github.com/mlsquare/mlops
+  repo-branch: main
+  repo-actions: [edit, issue]
+  
+  chapters:
+  - index.qmd
+  - preface.qmd
+  - intro.qmd
+  - part: principles.qmd
+    chapters:
+      - /principles/breadth-first.qmd
+      - /principles/systems-first.qmd
+      - /principles/vocab.qmd
+      
+  - part: practice.qmd
+    chapters:
+    - /practice/code-r4.qmd
+      
+  - part: wisdom.qmd
+    chapters:
+      - /wisdom/author-01.qmd
+      - /wisdom/author-02.qmd
+
+  - part: tutorials.qmd
+    chapters:
+    - /tutorials/intro-git.qmd
+    - /tutorials/intro-docker.qmd
+    - /tutorials/intro-deploy-with-docker.qmd
+    - /tutorials/intro-doc-with-quarto.qmd
+    - /tutorials/intro-git-actions.qmd
+    - /tutorials/intro-label-studio.qmd
+  
+  - part: assignments.qmd
+    chapters:
+      - /assignments/kedro.qmd
+      - /assignments/mlflow.qmd
+      - /assignments/kedro-hooks.qmd
+      - /assignments/dvc.qmd
+      - /assignments/kedro-pipelines.qmd
+      - /assignments/deploy-mlflow-rest.qmd
+      - /assignments/deploy-label-studio.qmd
+      - /assignments/ood.qmd
+      - /assignments/a-b-testing.qmd
+      - /assignments/r4-read.qmd
+      - /assignments/r4-replay.qmd
+      - /assignments/r4-recall.qmd
+      - /assignments/r4-replace.qmd
+      
+      
+  - part: projects.qmd
+    chapters:
+    - /projects/tabular.qmd
+    - /projects/nl2sql.qmd
+  
+format:
+  html:
+    theme:
+      - cosmo
+      - mlops.scss
+    code-link: true
+    author-meta: "mlsquare"
+    callout-appearance: simple
+
+editor: visual
+
