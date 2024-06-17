@@ -65,7 +65,7 @@ So the chief difference is - most of the resources are meant for practitioners. 
     - develop good (conceptual) models and *principles* which industry can adopt
     
 
-### What is in it for Students
+### Benefits for Students
 
 1. Industry Readiness
     - Instead of learning these skills during internships or on the job, students will acquire them as part of their academic experience.
@@ -100,7 +100,7 @@ So the chief difference is - most of the resources are meant for practitioners. 
 4. Cater to new market: As there is growing demand for MLOps skills in the industry due to the increasing adoption of AI and ML technologies. Organizations are looking for professionals who can manage the end-to-end ML lifecycle
     
 
-### Advantages for Industry
+### Benefits for Industry
 
 1. Reducing Ad-Hoc Practices
     - The course aims to reduce the ad-hoc nature of MLOps practices and bring consistency to tooling choices.
@@ -116,6 +116,10 @@ So the chief difference is - most of the resources are meant for practitioners. 
 4. Consistency and Knowledge Transfer
     - Standardized MLOps training ensures that professionals can move between projects with ease, facilitating better knowledge transfer and collaboration.
     - This reduces the time and effort needed to get new hires up to speed on MLOps practices within the organization.
+
+### Style
+Content will be presented in the form of take-away points, rather than main take-aways embedded in long winding paragraphs.
+Nuanced etc will be added in the due course of time or video recordings will be made available.
 
 
 ### Disclaimer
