@@ -1,3 +1,11 @@
 # Welcome {.unnumbered}
 
-Intro to MLOps
+You will find here a collection of *opinionated* notes on principles and practices to build reliable ML systems with many desirable properties, of which *performance* is all but one aspirational attribute. We are talking of systems, not models, that someone should be willing to use and pay for. This is a completely different setting from research which has its own place and value.
+
+An attempt is also made to bring together scientific methods, engineering tools and business process to that end. You will also find many excellent resources available to complement, from which inspiration is taken from while preparing the notes.
+
+
+openly, \
+The Saddle Point
+
+

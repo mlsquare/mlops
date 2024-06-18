@@ -28,9 +28,23 @@ A course on MLOps exposes the developer or system designer to this varying chall
 
 ### Why *THIS* course on MLOps?
 
-There are many great resources available on the web in terms of books, blogs, courses, and tool documentation. Why yet another one? A legit question. 
+There are many great resources available on the web in terms of books, blogs, courses, and tool documentation. Why yet another one? A legit question.  
 
-Limitations of Current MLOps Resources:
+At a philosophical level - there are two objectives:
+
+1. Fight the SOTA syndrome:
+
+    Let me explain.
+
+    Thanks to chatGPT, it all seems to be about LLMs - building new models, spinning new shiny applications built around those LLMs both open and closed included. These new shiny objects exacerbated an already sick situation - a situation where building models (model.train) showing 0.01% (or even less) increase in accuracy is chased and cherished -- all about State-of-the-Art (SOTA).
+
+    While we must work hard and smart to move the needle, and it might be satisfying and fulfilling intellectually -- unfortunately, it (chasing SOTA) is neither necessary nor sufficient to build *reliable* systems consisting of at least one ML component. There is lot more one has to consider in building and managing such systems.
+
+2. Prioritizes utility over novelty:
+
+    Admittedly, it is a boring job to be done. However, contrary to the prejudice, in the due course, you will learn that, indeed, solving for utility and overcoming the challenges along the way, is a rewarding journey in itself. Give no cult status to SOTA.
+
+More concretely, there are some limitations of current MLOps Resources - they are notably:
 
 1. Practitioner-Focused Literature
     - Most current MLOps books and resources are aimed at practitioners.
@@ -44,7 +58,7 @@ Limitations of Current MLOps Resources:
     - The course should cover not only MLOps but also ML system design and the operationalization of models.
     - Integrating these elements ensures a holistic understanding of both the development and deployment aspects of ML projects.
 
-So the chief difference is - most of the resources are meant for practitioners. But this set of notes is meant both for students who can learn the tools and processes, and apply them and also for practitioners (who can learn the principles). But some of the challenges are more systemic and pervasive:
+So the chief difference is - most of the resources are meant for practitioners. But this set of notes is meant both for students who can learn the tools and processes, and apply them and also for practitioners (who can learn the principles). But some of the challenges are more systemic and pervasive outlined below:
 
 1. Variability in MLOps Practices
     - MLOps processes and practices vary significantly between individuals and organizations.
@@ -124,3 +138,6 @@ Nuances etc will be added in the due course of time or video recordings will be 
 
 ### Disclaimer
 This course is by no means a replacement of any other resources available. Hopefully, the content and views presented complement the current practice of MLOps, readers and students benefit from it. 
+
+openly, \
+The Saddle Point
