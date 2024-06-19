@@ -2,8 +2,15 @@ project:
   type: book
   output-dir: _book
 
+navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - preface.qmd
 book:
-  title: "MLOps: Principles & Practices"
+  title: "MLOps: Notes on Principles & Practices"
   reader-mode: true
 
   page-footer:
@@ -68,12 +75,14 @@ book:
     chapters:
     - /projects/tabular.qmd
     - /projects/nl2sql.qmd
-  
+  - part: courses.qmd
+    chapters:
+    - courses-fullstack-semester.qmd
 format:
   html:
     theme:
-      - cosmo
-      - mlops.scss
+    - pulse
+    - mlops.scss
     code-link: true
     author-meta: "mlsquare"
     callout-appearance: simple

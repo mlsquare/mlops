@@ -1,0 +1,102 @@
+# Full Semester Course {.unnumbered}
+
+Below is an organization of the content to offer a 14 week full semester with 4 contact hours. It can be roughly divided into 3 parts.
+
+::: {style="font-size: 80%;"}
+### Overview
+
+**Prereqs**
+
+- Exposure and skill in data handling, building models in Python, PyTorch
+- Exposure and skill in developing code using Python, Git, IDEs like VS Code
+- A foundation course in Machine Learning, Deep Learning, Data Modeling, working with (Big) Data
+
+
+**Part-1: Essentials**
+
+- Topics
+    - basic principles and MLOps with Open Source Software
+    - two assignments
+- Learning Outcomes: students will be able to
+    - deploy models with logging, documentation, unit tests,  and APIs
+    - understand a conceptual framework to understand MLOps 
+
+**Part-2: Full Stack MLOps**
+
+- Topics
+    - holistic understanding of ML development, beyond chasing typical performance metrics
+    - one assignment, one mini project and a midterm
+- Learning Outcomes: students will be able to
+    - deploy models, observe their performance, make improvements, redeploy them.  
+    - ensure that the ML pipeline is reproducible. 
+    - incorporate principles from Responsible AI and build ML systems which can consist of many models and tools.    
+
+**Part-3: Application**
+
+- Topics
+    - practice, Cloud solutions
+    - capstone project and presentations
+    - invited lectures from Industry
+- Learning Outcomes: students will be able to
+    - frame, discover, develop, deploy, monitor, improve, re-deploy and maintain an ML Application
+    - approach the problem holistically, optimize RoI
+
+
+**Grading**:
+
+- 10%: Scribe lecture notes 
+- 30%: Three assignments, each 10%
+- 15%: Midterm mini project
+- 20%: In-class midterm MCQs, FIBs, Data Interpretation
+- 25%: Capstone project
+
+
+:::
+
+### Suggested Schedule (WIP)
+
+::: {style="font-size: 80%;"}
+
+
+| Week | Topics
+:- | :------------
+01 | **Discovery** <br> 1. Course Objectives and ML Recap <br> 2. ML Lifecycle, Fullstack ML Infrastructure <br> 3. DAGs, Software 1.0 vs 2.0, Tool Ecosystem, Project Setup <br>  4. Project Canvas & Human-centered Design |
+&nbsp;  | **Assignment-01**: Build a model that is well documented, modular, testable and functional | 
+02 | **Data Engineering** <br> 1. Design Patterns & Considerations, Data Models <br> 2. ETL (with Flyte/dbt) and Feature Store (Chronon) <br> 3. Data Versioning with DVC/Kedro and Logging <br>  4. Feature Engineering with TFX/DFL/Encodings |
+&nbsp;  | **No Assignment**:  | 
+03 | **Model Development & Experimentation** <br> 1. Design Patterns & Considerations <br> 2. Developing and Managing multiple models (with Hydra) <br> 3. Model versioning with MLFlow <br>  4.DoEs, Experiment tracking with WandB |
+&nbsp;  | **Assignment-02**: Build: run multiple experiments, benchmark with a baseline, pick a top performing model | 
+04 | **Deploy & Serve** <br> 1. Design Patterns & Considerations Deploy with Docker <br> 2. Model Serving (FastAPI, Flask) <br> 3. Build a demo with Gradio |
+&nbsp;  | **No Assignment**:  | 
+05 | **Evaluation & CI/CD** 1. Design Patterns & Considerations <br> 2. CI/CD with Github Actions <br> 3. Model Evaluation and benchmarking <br>  4. A/B Testing |
+&nbsp;  | **Assignment-03**: Build: test multiple models, and based on performance, roll out the best performing model for all users | 
+: Part-1: Essentials {.striped}
+
+
+| Week | Topics
+:- | :------------
+06 | **Performance Scaling, Continuous Testing** <br> 1. Design Patterns & Considerations <br> 2. Scaling training and serving with MetaFlow/ TrueFoundry <br>  3. Continuous Testing <br> 4. RoI on experiments (no free lunch)|
+&nbsp;  | **No Assignment**: 
+07 | **Observibility, Reproducibility** <br> 1. Design Patterns & Considerations <br> 2. Statistical tests for Model Drift, Data Drift <br> 3. Monitoring drift with Alibi <br> 4. R4 framework|
+&nbsp;  | **Midterm mini project**:  Build <br> 1. ML pipeline that is reproducible, and <br> 2. Implement “Replace” strategy where certain predictions were wrong,  remove those data points, and redeploy the model | 
+08 | **Trustworthy ML** <br> 1. Design Patterns & Considerations <br> 2. Conformalization for Statistical Guarantees OOD <br> 3. Human-in-the-Loop, Abstention, System of Models|
+&nbsp;  | **No Assignment** |
+09 | **Responsible ML** <br> 1.  Design Patterns & Considerations <br> 2. Fairness, Safety, Alignment <br> 3. Fairness with IBM 360|
+&nbsp;  | **No Assignment**:  | 
+10 | **Data Centric AI and Pipeline Debugging** <br> 1. Automated Debug of Data and Pretrained Models <br> 2. Human side of AI <br> 3. Data Cards, Model Cards, Modeling Cards
+|&nbsp;  | **Midterm**: in-class | 
+: Part-2: Fullstack MLOps {.striped}
+
+| Week | Topics
+:- | :------------
+11 | **Case Study**: <br> Putting It Together using OSS tools <br> Develop a RAG Chatbot using Mistral-7B |
+12 | **MLOps on Cloud Platforms** <br> [Databricks, Google Vertex, AWS SageMaker, MS Azure, TrueFOundry, OuterBounds] <br> 1. ETL and Feature Store <br> 2. Train, Deploy, Monitor <br> 3. A/B testing <br> 4. CI/CD under drift strategy where certain predictions were wrong,  remove those data points, and redeploy the model | 
+13 | **Practitioner Talks and Ask Me Anything Sessions** <br> 1. Healthcare <br> 2. Retail/ e-commerce <br> 3. Logistics/ Supply Chain <br> 4. Agriculture|
+14 | **Project Presentations** by Teams|
+: Part-3: Practice {.striped}
+
+:::
+
+
+openly, \
+The Saddle Point

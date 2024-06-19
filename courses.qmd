@@ -1,0 +1,5 @@
+# Courses {.unnumbered}
+
+Material presented in this web book can be tailored to offere courses in different formats.
+
+A full semester course for upper level undergraduates [here](courses-fullstack-semester.qmd)
