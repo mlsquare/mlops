@@ -1,0 +1,47 @@
+# Full Semester Course {.unnumbered}
+
+Below is an organization of the content to offer a 14 week full semester with 4 contact hours. It can be roughly divided into 3 parts.
+
+### Overview
+**Part-1**
+- Essentials
+    - basic principles and MLOps with Open Source Software
+    - two assignments
+- Learning Outcomes: students will be able to
+    - deploy models with logging, documentation, unit tests,  and APIs
+    - understand a conceptual framework to understand MLOps 
+
+**Part-2**
+
+- Full Stack MLOps
+    - holistic understanding of ML development, beyond chasing typical performance metrics
+    - one assignment, one mini project and a midterm
+- Learning Outcomes: students will be able to
+    - deploy models, observe their performance, make improvements, redeploy them.  
+    - ensure that the ML pipeline is reproducible. 
+    - incorporate principles from Responsible AI and build ML systems which can consist of many models and tools.    
+
+**Part-3**
+
+- Apply
+    - practice, Cloud solutions
+    - capstone project and presentations
+    - invited lectures from Industry
+- Learning Outcomes: students will be able to
+    - frame, discover, develop, deploy, monitor, improve, re-deploy and maintain an ML Application
+
+
+### Suggested Schedule (WIP)
+
+
+| Week | Topics | Readings | Assignments|
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+
+
+openly, \
+The Saddle Point

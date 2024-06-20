@@ -1,0 +1,138 @@
+# Full Semester Course {.unnumbered}
+
+Below is an organization of the content to offer a 14 week full semester with 4 contact hours. It can be roughly divided into 3 parts.
+
+::: {.smaller}
+### Overview
+**Part-1: Essentials**
+
+- Topics
+    - basic principles and MLOps with Open Source Software
+    - two assignments
+- Learning Outcomes: students will be able to
+    - deploy models with logging, documentation, unit tests,  and APIs
+    - understand a conceptual framework to understand MLOps 
+
+:::
+
+**Part-2: Full Stack MLOps**
+
+- Topics
+    - holistic understanding of ML development, beyond chasing typical performance metrics
+    - one assignment, one mini project and a midterm
+- Learning Outcomes: students will be able to
+    - deploy models, observe their performance, make improvements, redeploy them.  
+    - ensure that the ML pipeline is reproducible. 
+    - incorporate principles from Responsible AI and build ML systems which can consist of many models and tools.    
+
+**Part-3: Application**
+
+- Topics
+    - practice, Cloud solutions
+    - capstone project and presentations
+    - invited lectures from Industry
+- Learning Outcomes: students will be able to
+    - frame, discover, develop, deploy, monitor, improve, re-deploy and maintain an ML Application
+
+
+### Suggested Schedule (WIP)
+
+::: {style="font-size: 50%;"}
+
++-----------------------------------+-----------------------------------+
+| [Weeks 01-05]{.c1}                | [Essentials]{.c11}                |
++-----------------------------------+-----------------------------------+
+| [Week 01]{.c1}                    | [Introduction and                 |
+|                                   | Foundation]{.c11}                 |
+|                                   |                                   |
+|                                   | 1.  [Course Objectives and ML     |
+|                                   |     Recap]{.c1}                   |
+|                                   | 2.  [ML Lifecycle, Fullstack ML   |
+|                                   |     Infrastructure]{.c1}          |
+|                                   | 3.  [ML pipeline is a DAG,        |
+|                                   |     Software 1.0 vs 2.0, Tool     |
+|                                   |     ecosystem (Git, VS Code etc), |
+|                                   |     Project Setup]{.c1}           |
+|                                   | 4.  [Software Engineering Best    |
+|                                   |     Practices for ML]{.c1}        |
++-----------------------------------+-----------------------------------+
+| [Release Assignment 1]{.c1}       | [Read: some well written          |
+|                                   | repositories]{.c1}                |
+| [(due in two weeks)]{.c1}         |                                   |
+|                                   | [Build: a "tbd" Model that is     |
+| []{.c1}                           | documented, modular, testable,    |
+|                                   | functional]{.c1}                  |
+| [Final Projects released]{.c1}    |                                   |
+|                                   |                                   |
+| [(due before last week)]{.c1}     |                                   |
++-----------------------------------+-----------------------------------+
+| [Week 02]{.c1}                    | [Data Engineering]{.c11}          |
+|                                   |                                   |
+|                                   | -   [Design Patterns &            |
+|                                   |     Considerations, Data          |
+|                                   |     Models]{.c1}                  |
+|                                   | -   [ETL (with Flyte) and Feature |
+|                                   |     Store (Chronon)]{.c1}         |
+|                                   | -   [Data Versioning with DVC and |
+|                                   |     Logging]{.c1}                 |
+|                                   | -   [Feature Engineering with     |
+|                                   |     TFX/DFL/Encodings]{.c1}       |
++-----------------------------------+-----------------------------------+
+| [Week 03]{.c1}                    | [Model Development &              |
+|                                   | Experimentation]{.c11}            |
+|                                   |                                   |
+|                                   | -   [Design Patterns &            |
+|                                   |     Considerations]{.c1}          |
+|                                   |                                   |
+|                                   | ```{=html}                        |
+|                                   | <!-- -->                          |
+|                                   | ```                               |
+|                                   | -   [Developing and Managing      |
+|                                   |     multiple models (with         |
+|                                   |     Hydra)]{.c1}                  |
+|                                   | -   [Model versioning with        |
+|                                   |     MLFlow]{.c1}                  |
+|                                   | -   [DoEs, Experiment tracking    |
+|                                   |     with WandB]{.c1}              |
++-----------------------------------+-----------------------------------+
+| [Release Assignment 2]{.c1}       | [Read: documentation of various   |
+|                                   | OSS tools]{.c1}                   |
+| [(due in two weeks)]{.c1}         |                                   |
+|                                   | [Build: run multiple experiments, |
+|                                   | benchmark with a baseline, pick a |
+|                                   | top performing model ]{.c1}       |
++-----------------------------------+-----------------------------------+
+| [Week 04]{.c1}                    | [Deploy & Serve]{.c11}            |
+|                                   |                                   |
+|                                   | -   [Design Patterns &            |
+|                                   |     Considerations]{.c1}          |
+|                                   | -   [Deploy with Docker]{.c1}     |
+|                                   | -   [Model Serving (FastAPI,      |
+|                                   |     Flask)]{.c1}                  |
+|                                   | -   [Build a demo with            |
+|                                   |     Gradio]{.c1}                  |
++-----------------------------------+-----------------------------------+
+| [Week 05]{.c1}                    | [Evaluation & CI/CD]{.c11}        |
+|                                   |                                   |
+|                                   | -   [Design Patterns &            |
+|                                   |     Considerations]{.c1}          |
+|                                   | -   [CI/CD with Github            |
+|                                   |     Actions]{.c1}                 |
+|                                   | -   [Model Evaluation and         |
+|                                   |     benchmarking]{.c1}            |
+|                                   | -   [A/B Testing]{.c1}            |
++-----------------------------------+-----------------------------------+
+| [Release Assignment 3]{.c1}       | [Read: documentation of various   |
+|                                   | OSS tools]{.c1}                   |
+| [(due in two weeks)]{.c1}         |                                   |
+|                                   | [Build: test multiple models, and |
+|                                   | based on performance, roll out    |
+|                                   | the best performing model for all |
+|                                   | users]{.c1}                       |
++-----------------------------------+-----------------------------------+
+
+
+
+
+openly, \
+The Saddle Point
