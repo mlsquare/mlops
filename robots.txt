@@ -1,1 +1,1 @@
-Sitemap: https://mlsquare.io/mlops/sitemap.xml
+Sitemap: https://mlsquare.github.io/mlops/sitemap.xml
