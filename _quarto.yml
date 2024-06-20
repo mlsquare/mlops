@@ -21,7 +21,7 @@ book:
   
   cover-image: mlops-logo.png
   favicon: mlops-logo.png
-  site-url: https://mlsquare.io/mlops
+  site-url: https://mlsquare.github.io/mlops
   repo-url: https://github.com/mlsquare/mlops
   repo-branch: main
   repo-actions: [edit, issue]
