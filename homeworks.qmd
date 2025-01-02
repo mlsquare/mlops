@@ -1,0 +1,208 @@
+# Homeworks {.unnumbered}
+
+
+
+## Midterm Bonus Problem {#sec-hw-midterm-bonus}
+
+**Reading/ Coding**
+
+- [Building a Large Language Model](https://www.manning.com/books/build-a-large-language-model-from-scratch?utm_source=raschka&utm_medium=affiliate&utm_campaign=book_raschka_build_12_12_23&a_aid=raschka&a_bid=4c2437a0&chan=mm_github) (From Scratch). Book by Sebastian Raschka
+- [Axiomatic Attribution for Deep Networks](https://arxiv.org/abs/1703.01365). This paper was the precursor to XAI methods like [Grad-CAM](https://arxiv.org/abs/1610.02391) and [Grad-CAM++](https://arxiv.org/abs/1710.11063) and variants.
+- [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572)(2014). This was the precursor to many adversarial attacks papers and robustness methods in DL and grown into a massive research area with implications in AI security.
+- [code](https://github.com/jankrepl/mildlyoverfitted/tree/master/mini_tutorials/gradient_wrt_input) Compute gradients of a Deep Network w.r.t to inputs and apply them in XAI and Adversatial Attacks. Video tutorial [here](https://www.youtube.com/watch?v=5lFiZTSsp40)
+
+
+**Task**:
+
+- Create _Midterm-Bonus_ branch of your private _AI-839_ repo. 
+- Verify that you can pre-train 150M GPT-2 small model based on [code](https://github.com/rasbt/LLMs-from-scratch/blob/main/ch05/01_main-chapter-code/gpt_train.py) of [Building LLMs from Scratch](https://github.com/rasbt/LLMs-from-scratch). Highly recommend reading this book by Sebastian Raschka.
+- Verify that you can fine-tune with GPT-2 small model on a binary classification task. Consider the spam/ham example dataset provided in there.
+- Verify that you can compute gradients w.r.t to inputs and the weights of the model.
+
+**Due by** \
+11.59PM IST, Tuesday, 15th Oct, 2024.
+
+## HW-06 {#sec-hw-06}
+
+**Reading**
+
+- [Right to Erasure](https://gdpr-info.eu/art-17-gdpr/) act of GDPR
+
+
+**Task**
+
+- This HW focuses on the ability to implement techniques to enforce the "right to erase" policy
+- Create a branch named _hw06_ of your private repo.
+- Treat the model you have built in @sec-hw-04 as your baseline, call it _Model A_
+- Imagine the first 10 records were to be erased.
+- _Implement_ a strategy s.t those 10 records will not be used in any future predictions. Update the API, and Data and Model cards to reflect this change.
+- Suggest a method to implement "right to erasure" such that, even all past predictions that were influenced by the 10 records will be re-scored, and pushed.
+
+**Due by** \
+11.59PM IST, Friday, 18th Oct, 2024.
+
+## HW-05 {#sec-hw-05}
+
+**Reading**
+
+- [mlflow](https://mlflow.org/docs/latest/index.html) Read _mlflow_ documentation 
+- [kedro-mlflow](https://kedro-mlflow.readthedocs.io/en/stable/) Read _kedro-mlflow_ plug-in documentation
+
+**Task**
+
+- This HW focuses on Model Comparison and Continuous Improvement
+- It builds on HW03-04. See instructions for @sec-hw-03, @sec-hw-04. 
+- Create a branch named _hw05_ of your private repo.
+- Treat the model you have built in @sec-hw-04 as your baseline, call it _Model A_
+- A new tranche of data is shared with you on google drive.
+- Asses the performance of _Model A_ on this new tranche data. Is the model performing well on all metrics (i.e data drift)?
+- Develop an alternate model, call it _Model B_. Run a Hypothesis test to see _Model B_ is better than _Model A_ on new tranche of data shared in your private repo.
+- Deploy _Model B_ if the performance is better than _Model A_ on the new tranche of data. Update metadata of the API to reflect the new model version being used to make the predictions.
+
+**Due by** \
+11.59PM IST, Tuesday, 24th Sep, 2024.
+
+**Feedback** \
+
+- Write a separate monitoring pipeline. It is exactly the evaluation pipeline except that it runs on the new ground truth data. 
+- Conditionally, trigger a re-training pipeline, which is again exactly, the training pipeline when the strategy to update the model is retraining on new data or all data including the new delta. 
+- Add a new model comparison pipeline
+- Using git-hooks, deploy the model if the performance is satisfactory.
+- Automate as much as possible.
+
+
+## HW-04 {#sec-hw-04}
+
+**Reading**
+
+- [mlflow](https://mlflow.org/docs/latest/index.html) Read _mlflow_ documentation 
+- [kedro-mlflow](https://kedro-mlflow.readthedocs.io/en/stable/) Read _kedro-mlflow_ plug-in documentation
+
+**Task**
+
+- This HW focuses on Deployment and Monitoring.
+- It builds on HW03. See instructions for @sec-hw-03. 
+- Create a branch named _hw04_ of your private repo. 
+- Make sure that
+    - Define the request and response structure of the API. Provide API documentation.
+    - Model is deployed and API is available via kedro-mlflow plug-in.
+    - Model usage is logged
+
+**Due by** \
+11.59PM IST, Friday, 13th Sep, 2024.
+
+**Feedback** \
+
+- Separate inference pipeline from the training pipeline. Inference pipeline includes the pre-processors, if any, model loading, and model prediction functions. Typically, only models are exposed as inference APIs. This may not work always. Guess why?
+- Train any pre-processors like standard scaler, label encoding _after_ splitting the data into train, test. Not before splitting. Guess why?
+    
+## HW-03 {#sec-hw-03}
+
+**Reading**
+
+- [Evidently](https://docs.evidentlyai.com/): Read Evidently, an ML & Data Quality and Monitoring tool.
+- Ch 8 of [ML System Design](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)
+- Blogs from [Great Expectations](https://greatexpectations.io/)
+
+**Task**
+
+- This HW focuses on Data-driven code structure, documentation, code hygiene, testing, and data quality assessment & reporting.
+- A Google Drive folder with your _github_ handle is shared. This contains a dataset.
+- Create a branch named _hw03_ of your private repo. 
+- Similar to the Kedro spaceflights tutorial, write your data loading, model training, and testing, pipeline interms of nodes and pipelines.
+ - Make sure that
+    - APIs are documented with _quartodoc_
+    - Code is linted and formatted (with _ruff_)
+    - Nodes and Pipelines are Unit tested (with _PyTest_). 
+    - Data Quality and Drift Detection Test suites using Evidently are run and the reports are represented as Plotly nodes in Kedro . 
+    - Automated test to detect distribution drift of _target_ variable(represented as _y_ in the dataset) between Train and Test splits is run using Evidently. The pipeline fails if distribution drift is detected.
+
+**Feedback** \
+
+- API documentation
+    - use docstrings in code so that they can be parsed and rendered into code documentation automatically. You do not have to write it your self separately. 
+    - code and documentation should co-exist and should be written at the same time, so that changes in code will and should be reflected in the documentation immediately.
+- Know what tests _evidently_ runs, and read the documentation. Running the software is not sufficient. 
+
+**Due by** \
+11.59PM IST, Friday, 06th Sep, 2024.
+
+## HW-02 {#sec-hw-02}
+
+**Reading**
+
+- Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI[paper](https://arxiv.org/abs/2204.01075) [blog](https://research.google/blog/the-data-cards-playbook-a-toolkit-for-transparency-in-dataset-documentation/) from Google Research.
+
+**Task**
+
+- Download the [soybean](https://www.openml.org/search?type=data&status=active&id=42) tabular dataset version v1 with dataset id 42 from [openML](https://www.openml.org/search?type=data&status=active). 
+- Make sure that a repo is already created (as you would have done in HW-01) with _repo name_ "your first name-ai-839" and git handle _dhavala_ is given read and write access.  
+- Create a new branch name _hw02_
+- Under notebooks folder, create a new notebook with markdown and cell tags to implement Data Cards.
+- Using [pymfe](https://github.com/ealcobaca/pymfe), include some useful properties of the dataset in the Data Card - - Make sure that any changes in the dataset get reflected automatically in the Data Card. Specifically, if the dataset id 1023 (refers to its version v2), Data Card should reflect any changes in the new version of the data. 
+- The [CLeAR](https://shorensteincenter.org/clear-documentation-framework-ai-transparency-recommendations-practitioners-context-policymakers/) framework has some really nice goals for a document. A document must be 1) comparable 2) legible 3) actionable and 4) robust to achieve an aspect of AI Transparency. Here we are talking about documenting Data, Models, and AI Systems.
+
+**Due by** \
+11.59PM IST, Friday, 23rd August, 2024.
+
+**Feedback** \
+
+- Like Project Cards, identify clear sections. For example, Data Cards should address 
+    - why was the data collected (if we know it)
+    - When was collected
+    - Who collected
+    - What was collected. Is there sensitive data? If so, what are they?
+- Description/profile of the data
+- Sample data
+- Most datasets on the internet do not have any of these attributes. Imagine, someone gives you a CSV file without the headers? Will that be useful? Put the end user first.
+-  The instruction was to use [pymfe](https://github.com/ealcobaca/pymfe) as it can routinely gather most statistics. Data Cards is not a data scientist's jupyer notebook. Neatly format. Do not treat Data Cards as notebook with code blocks and output cells. It is data-driven document. It is neither a document with static content or jupyter notebook.
+- Use modern publishing tools like _quarto_ which erase the boundary between word processors like word and EDA notebooks. Do not reinvent the wheel and render your own markdown strings from notebook cell outouts.
+- Focus is on data-driven documentation.
+
+
+## HW-01 {#sec-hw-01}
+
+**Reading**
+
+- Chip Huyen's Lecture Notes on ML in Production. Intro [here](https://docs.google.com/document/d/1C3dlLmFdYHJmACVkz99lSTUPF4XQbWb_Ah7mPE12Igo/edit#heading=h.a8w2b79yy875)
+- [Phase Zero](https://ml-ops.org/content/phase-zero) of MLOps from [ml-ops.org](https://ml-ops.org) blogs. Very useful and nicely done
+- [Towards CRISP-ML(Q)](https://arxiv.org/pdf/2003.05155): A Machine Learning Process Model  with QA Methodology
+- [Project Canvas](https://madewithml.com/courses/mlops/product-design/#template) from Gokul Mohandas's [course](https://github.com/GokuMohandas/mlops-course)
+- [AI Canvas](https://hbr.org/2018/04/a-simple-tool-to-start-making-decisions-with-the-help-of-ai)
+
+**Task**
+
+- Pick your favorite problem. Complete the information required in the [project card template](./resources/project-card.ipynb)
+- Create a new kedro project with _repo name_ "your first name-ai-839". Documentation [here](https://docs.kedro.org/en/stable/get_started/new_project.html)
+- Push it to github. Give read read/write acces to git handle _dhavala_
+- Create a branch "hw01". Under notebooks folder, copy  [project card template](./resources/project-card.ipynb)
+- Complete the Project Card, commit and push the notebook to your github (remote) repo.
+
+**Due by** \
+11.59PM IST, Tuesday, 13th August, 2024.
+
+**Feedback** \
+
+- Complete all sections - even if the problem is hypothetical.
+- In reality, authoring Project Cards is an _iterative_ and _collaborative_ exercise. But in this HW, you are forced to think through. Information may be inaccurate but should not be incomplete. Recall that one of the objective of the [CLeAR](https://shorensteincenter.org/) framework is to make documentation comparable. If some sections of this standard template are missing, these docs can not be compared.
+- _Business View_
+    - was the hard part to get it right. Often, models, ML metrics, features of the ML model crept into this section. Very little ML will go into this section. 
+- _Business View: Background_
+    - Do not describe the solution. Describe the situation of the user. It is like the backdrop. It should describe the "where" of your solution. Once the _why_ section is read through, it should resonate well. Marketing & Sales teams, Product and User Research teams should be consulted (or lead by them).
+- In the _Business View: Problem_ section, often solution is outlined. Don't commit to a solution just as yet. Describe the problem - what to be solved, not how it is being solved. It is not the ML problem yet. Think of this way. Even of the solution does not involve ML, it could still have been a good problem to solve.
+- _Business View: Customer_
+    - Keep it as specific as possible. Simply put, every additional adjective, and qualifier will identify the customer better. 
+- _Business View: Value Proposition_
+    - It is largely about _reduction_ in _something_ or _improvement_ of _something_ by a certain _quantity_.  
+- _Business View: Product_
+    - It is not about the features. Features is not equal to experience. Focus on the experience, journey, workflow of the user. Think of user stories. One should almost be able to visualize how they will _use_ your solution and get benefit from.
+- _Business View: Objectives_
+    - Objectives are not wishlists. An objective should at least have a deliverable (outcome) and a timeline.
+- _Business View: Risks & Challenges_
+    - Probably, we should can keep ML Risks separate. Here, it is about Viability, Adoption and Scalability of the Solution and the assumptions went into it. 
+    - Data challenges are real and most pressing. 
+    - Is the eco-system ready to handle ML responses? Can the users handle wrong information? Is there a redressal/ recourse mechanism? 
+    - The user has knowledge of the application? In other words, can user review the information provided by the application or naively believes the results?
+    - This is the most paradoxical issue with ML. Are you solving the problem from the past? The historical data is about the past. But do we expect the world to live that way? Is ML necessary, could it have been solved differently?
+
+

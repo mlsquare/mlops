@@ -1,0 +1,28 @@
+---
+title: "Full Stack MLOps"
+bibliography: references.bib
+csl: ieee.csl
+link-citations: true
+---
+
+You will find below material on *Full Stack MLOps: Principles and Practice* - based on the course [AI-839](https://mlsquare.github.io/ai-839/) taught at [IIIT-B](https://www.iiitb.ac.in/) in the Fall of 2024.
+
+### Content
+
+::: {style="font-size: 80%;"}
+| Chapter | Topics | Resources |   |
+|:-----------------|:-----------------|:-----------------|:-----------------|
+| 00-A | **Preface** <br> 1. Why MLOps <br> 2. About the Book: Approach, Expectations and Outcomes | [preface](./chapters/c00.qmd) |  |
+|   |  | Added Thu, 1st Jan, 2025 |  |
+| 00-B | **Setup** <br> 1. OSS for ML <br> 2. ML PODS <br> | [OSS for ML](./ch00/oss-ml.qmd) |  |
+|   |  | Added Thu, 2nd Jan, 2025 |  |
+: **Background** {.striped}
+:::
+
+## References
+
+1.  \[book\] [ML Engineering](https://www.mlebook.com/wiki/doku.php), Andiry Burkov, 2019, LeanPub
+2.  \[book\] [Effective Data Science Infrastructure](https://www.manning.com/books/effective-data-science-infrastructure), Vile Tuulos, 2023, Manning
+3.  \[book\] [ML System Design](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/), Chip Huyen, 2023, O'Reilly
+4.  \[course\] [CS329S \@ Stanford: ML Systems Design](https://stanford-cs329s.github.io/), Chip Huyen, 2022
+5.  \[course\] [MLOps](https://github.com/GokuMohandas/mlops-course), Gokul Mohandas, 2024

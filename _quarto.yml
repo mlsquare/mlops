@@ -1,0 +1,49 @@
+project:
+  type: book
+  output-dir: docs
+
+navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Preface"
+        href: preface.qmd
+book:
+  title: "Full Stack MLOps"
+  subtitle: "Principles and Practice"
+  reader-mode: true
+
+  page-footer:
+    left: |
+      course under prep.
+    right: |  
+      This course material was built with <a href="https://quarto.org/">Quarto</a> with <a href="https://github.com/hadley/r4ds">r4ds</a> theme.
+  
+  cover-image: crisp-ml-process.jpg
+  favicon: crisp-ml-process.jpg
+  site-url: https://mlsquare.github.io/mlops
+  repo-url: https://github.com/mlsquare/mlops
+  repo-branch: main
+  repo-actions: [edit, issue]
+  
+  chapters:
+  - preface.qmd
+  - news.qmd
+  - index.qmd
+  - part: Introduction
+    chapters:
+    - ./ch00/oss-ml.qmd
+  
+format:
+  html:
+    theme:
+    - pulse
+    - mlops.scss
+    code-link: true
+    author-meta: "mlsquare"
+    callout-appearance: simple
+    number-sections: false
+editor: visual
+

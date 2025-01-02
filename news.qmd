@@ -1,0 +1,35 @@
+# Updates {.unnumbered}
+
+-   \[01-January-2025\] Material launched based on [AI-839](https://mlsquare.github.io/ai-839/) taught at [IIIT-B](https://www.iiitb.ac.in/) in the Fall of 2024.
+
+
+
+## Overview
+
+- See [preface](./preface.qmd) for why MLOps and the approach and outlook taken here.
+- See the [Full Stack MLOps](./index.qmd) page for recent information on Lecture Notes, Homeworks, Projects, etc..
+
+**Prereqs**
+
+-   Exposure and skill in data handling, building models in Python, PyTorch
+-   Exposure and skill in developing code using Python, Git, IDEs like VS Code
+-   A foundation course in Machine Learning, Deep Learning, Data Modeling, working with (Big) Data
+
+**Part-1: Essentials (ML Engineering)**
+
+-   Topics
+    -   MLOps motivation, need
+    -   Basic principles and MLOps with Open Source Software
+-   Learning Outcomes: students will be able to
+    -   Deploy models with logging, documentation, unit tests, and APIs
+    -   Understand a conceptual framework to approach MLOps holistically
+
+**Part-2: Full Stack MLOps**
+
+-   Topics
+    -   Holistic understanding of ML development, beyond chasing typical performance metric
+-   Learning Outcomes: students will be able to
+    -   deploy models, observe their performance, make improvements, redeploy them.
+    -   ensure that the ML pipeline is reproducible.
+    -   incorporate principles from Responsible AI and build ML systems which can consist of many models and tools.
+    -   frame, discover, develop, deploy, monitor, improve, re-deploy and maintain an ML Application
