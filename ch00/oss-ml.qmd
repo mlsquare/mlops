@@ -20,16 +20,16 @@ We like to address the question _Is developing ML software (and models) similar 
 
 ### Software 2.0 - the Chief of Pain!
 
-[Andrej Karpathy](https://karpathy.ai/) is said to have coined the term [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) to refer modern day ML. If any thing, Software 2.0 is a different beast compared to Software 1.0 (the classical software).
+[Andrej Karpathy](https://karpathy.ai/) is said to have coined the term [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) to refer modern day ML. If any thing, Software 2.0 is a different beast compared to Software 1.0 (the classical software). _Software 2.0 is a nascent field_ as far as Enterprise-level maturity is concerned unlike  Software 1.0 that has matured into a stable industry over a period of decades. Exceptions exists of course! The MAANGs and FAANGs of the world have figured how out to tame this beast into a profit-making technology. This know-how is a specialty and efforts are underway to democratize this knowledge.
+
 
 > ML Systems are stochastic systems  
 
-- _Software 2.0 is a nascent field_ as far as Enterprise-level maturity is concerned unlike  Software 1.0 that has matured into a stable industry over a period of decades. Exceptions exists of course! The MAANGs and FAANGs of the world have figured how out to tame this beast into a profit-making technology. This know-how is a specialty and efforts are underway to democratize this knowledge.
-- The development (of ML) is highly non-linear. Often, the problem to solve is not clear as it is data and environment dependent. In fact, part of the job  is to discover what problem to solve (problem formulation), rather tham building models (for a wrong problem).
 - _Functional requirements are codified in the data_, and not in an Software Require Specification (SRS/SRD/PRD) doc written by a Product Owner. 
 - _Behavior (expected functionality) is realized in opaque bytes_, and not written or programmed in formal languages by developers (human beings) but learnt from data.  
 - _It can produce mistakes and errors_ with probability greater than zero.
 - _This provably-wrong-ness is the anti-thesis of determinism and reliability_ that is expected of any (semi) autonomous systems.
+
 
 The design and build process must address these chief differences to build Enterprise-grade ML systems. It begets a different kind of technology (Engineering) debt and technique (Scientific Methods) debt. We briefly discuss them next.
 
@@ -41,6 +41,11 @@ Software Industry has largely figured out developing Enterprise IT applications 
 > Anything changes, everything changes.
 
 ML(AI) has has no common sense unlike us humans, and sees only the world it is trained on. Any variable in the equation - be it data, model, or the application context & situation change, the AI may not longer work as expected. This makes deploying and maintaining AI complicated.
+
+> Expect Future = Past.
+
+- The development (of ML) is highly non-linear. Often, the problem to solve is not clear as it is _data_ and _environment_ dependent. In fact, part of the job  is to discover what problem to solve (problem formulation), rather than building models (for a wrong problem).
+- If the past (from which data was collected) and future (where the model is situated) diverge, models drift. And it wont be easy to fix. Observability becomes critical.  
 
 > Clash of Dev and Prod cultures
 
