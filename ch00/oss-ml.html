@@ -161,8 +161,14 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#pre-work" id="toc-pre-work" class="nav-link active" data-scroll-target="#pre-work">Pre-work:</a></li>
   <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a>
+  <ul class="collapse">
+  <li><a href="#software-2.0---the-chief-of-pain" id="toc-software-2.0---the-chief-of-pain" class="nav-link" data-scroll-target="#software-2.0---the-chief-of-pain">Software 2.0 - the Chief of Pain!</a></li>
+  <li><a href="#technology-debt" id="toc-technology-debt" class="nav-link" data-scroll-target="#technology-debt">Technology Debt</a></li>
+  <li><a href="#technique-debt" id="toc-technique-debt" class="nav-link" data-scroll-target="#technique-debt">Technique Debt</a></li>
+  <li><a href="#ml-pods" id="toc-ml-pods" class="nav-link" data-scroll-target="#ml-pods">ML PODS</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mlsquare/mlops/edit/main/ch00/oss-ml.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mlsquare/mlops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -191,24 +197,24 @@ ul.task-list li input[type="checkbox"] {
 <p>Date: Thursday, 02-Jan-2025<br>
 Author: Soma S Dhavala<br>
 Version: 0.1.0</p>
-<section id="pre-work" class="level3">
-<h3 class="anchored" data-anchor-id="pre-work">Pre-work:</h3>
+<section id="pre-work" class="level2">
+<h2 class="anchored" data-anchor-id="pre-work">Pre-work:</h2>
 <ol type="1">
 <li>Refresh ML foundations.</li>
 <li>Read “The 100 page ML book” by Andiry Burkov. Chapters accessible <a href="https://themlbook.com/wiki/doku.php">here</a></li>
 <li>Read the <a href="../preface.html">preface</a> of <em>this</em> book</li>
 </ol>
 </section>
-<section id="lecture" class="level3">
-<h3 class="anchored" data-anchor-id="lecture">Lecture</h3>
+<section id="lecture" class="level2">
+<h2 class="anchored" data-anchor-id="lecture">Lecture</h2>
 <p>We will go over the <a href="./ML-PODs-01-Jan-25.pdf">Deck</a>. Video [tbd]</p>
 <p><object data="./ML-PODs-01-Jan-25.pdf" type="application/pdf" width="100%" height="500"><a href="./ML-PODs-01-Jan-25.pdf" download="">Download PDF file.</a></object></p>
 </section>
-<section id="notes" class="level3">
-<h3 class="anchored" data-anchor-id="notes">Notes</h3>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
 <p>We like to address the question <em>Is developing ML software (and models) similar to developing (traditional) software?</em>. If not, what makes it different? What type of software tools, frameworks, processes are needed - both from Engineering (technology) and Science (techniques) point of view?</p>
-<section id="software-2.0---the-chief-of-pain" class="level4">
-<h4 class="anchored" data-anchor-id="software-2.0---the-chief-of-pain">Software 2.0 - the Chief of Pain!</h4>
+<section id="software-2.0---the-chief-of-pain" class="level3">
+<h3 class="anchored" data-anchor-id="software-2.0---the-chief-of-pain">Software 2.0 - the Chief of Pain!</h3>
 <p><a href="https://karpathy.ai/">Andrej Karpathy</a> is said to have coined the term <a href="https://karpathy.medium.com/software-2-0-a64152b37c35">Software 2.0</a> to refer modern day ML. If any thing, Software 2.0 is a different beast compared to Software 1.0 (the classical software).</p>
 <blockquote class="blockquote">
 <p>ML Systems are stochastic systems</p>
@@ -224,8 +230,8 @@ Version: 0.1.0</p>
 </ul>
 <p>The design and build process must address these chief differences to build Enterprise-grade ML systems. It begets a different kind of technology (Engineering) debt and technique (Scientific Methods) debt. We briefly discuss them next.</p>
 </section>
-<section id="technology-debt" class="level4">
-<h4 class="anchored" data-anchor-id="technology-debt">Technology Debt</h4>
+<section id="technology-debt" class="level3">
+<h3 class="anchored" data-anchor-id="technology-debt">Technology Debt</h3>
 <p>Software Industry has largely figured out developing Enterprise IT applications with clearly established roles (Architects, Full Stack Developers, Data Engineers, Product Owners, Project Managers, SCRUM Masters, Testers, DevOps, Support, etc.), processes (Agile Methods, Distributed, Decentralized SDLCs, Continuous Delivery), tooling (Git, JIRA, etc.). Software Engineering best practices are codified into Design Patterns, Conventions Frameworks and Stacks (eg. WAMP, MEAN, MERN) so as to reduce the Tech Debt as much as possible. ML System Development can benefit from the IT &amp; Software Industry in this regard and DevOps comes to the forefront. But ML Systems have more complexity than classical software systems.</p>
 <blockquote class="blockquote">
 <p>Anything changes, everything changes.</p>
@@ -249,8 +255,8 @@ Version: 0.1.0</p>
 <li>Developing production-worthy models require aspects like testing, documentation, code quality, readability (of code), knowledge transfer (from one team member to another), which are often ignored in a model-centric workflow and mindset.</li>
 </ul>
 </section>
-<section id="technique-debt" class="level4">
-<h4 class="anchored" data-anchor-id="technique-debt">Technique Debt</h4>
+<section id="technique-debt" class="level3">
+<h3 class="anchored" data-anchor-id="technique-debt">Technique Debt</h3>
 <p>The Tech Debt can be addressed by adapting and extending DevOps. But there are many algorithms challenges to build trustworthy and reliable ML Systems. This incurs Technique/Methods debt.</p>
 <blockquote class="blockquote">
 <p>Beyond Performance</p>
@@ -265,10 +271,9 @@ Version: 0.1.0</p>
 <p>Excessive and obsessive worry about model improvements, while keeping the dataset fixed, is one of leading causes of premature and untimely death of AI initiatives. Battling this intellectual inertial is extremely hard.</p>
 <p>All of the above make Software 2.0 hard to formulate, develop, test, monitor, debug, control, improve, and maintain. At the same time, ensuring that the models are explainable, trustworthy, robust, secure, reliable, is a double whammy. Therefore, all software systems, tools, and process must address this core issue.</p>
 </section>
-<section id="ml-pods" class="level4">
-<h4 class="anchored" data-anchor-id="ml-pods">ML PODS</h4>
+<section id="ml-pods" class="level3">
+<h3 class="anchored" data-anchor-id="ml-pods">ML PODS</h3>
 <p>We need right abstractions, conventions, reference stacks to address both Technology debt and Technique Debt. A git template that integrates many tools with specific responsibilities is needed. The goal is to support as many quality attribute as possible by delegating them to tools as much as possible. We refer to such a stack as <em>ML Pod</em>. Such a git template for supporting image-based workflows is under development <a href="https://github.com/mlsquare/image-ml-pod">here</a>. Read the documentation <a href="https://mlsquare.github.io/image-ml-pod/docs/">here</a>.</p>
-</section>
 </section>
 <section id="further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="further-reading">Further Reading</h3>
@@ -278,6 +283,7 @@ Version: 0.1.0</p>
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
