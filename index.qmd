@@ -14,7 +14,7 @@ You will find below material on *Full Stack MLOps: Principles and Practice* - ba
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | 00-A | **Preface** <br> 1. Why MLOps <br> 2. About the Book: Approach, Expectations and Outcomes | [Preface](preface.qmd) |  |
 |   |  | Added Thu, 1st Jan, 2025 |  |
-| 00-B | **Setup** <br> 1. OSS for MLOps <br> 2. ML PODS <br> | [MLOps Stack](./ch00/oss-ml.qmd) |  |
+| 00-B | **Setup** <br> 1. OSS for MLOps <br> 2. ML PODS <br> | [MLOps Stack](./ch00/mlops-stack.qmd) |  |
 |   |  | Added Thu, 2nd Jan, 2025 |  |
 : **Background** {.striped}
 :::
