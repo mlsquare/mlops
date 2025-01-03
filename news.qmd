@@ -1,6 +1,7 @@
 # Updates {.unnumbered}
 
--   \[01-January-2025\] Material launched based on [AI-839](https://mlsquare.github.io/ai-839/) taught at [IIIT-B](https://www.iiitb.ac.in/) in the Fall of 2024.
+-   [03-January-2025] updated [MLOps Stack](./ch00/mlops-stack.qmd) page
+-   [01-January-2025] Material launched based on [AI-839](https://mlsquare.github.io/ai-839/) taught at [IIIT-B](https://www.iiitb.ac.in/) in the Fall of 2024.
 
 
 

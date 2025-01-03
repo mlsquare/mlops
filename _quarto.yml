@@ -34,7 +34,7 @@ book:
   - index.qmd
   - part: Introduction
     chapters:
-    - ./ch00/oss-ml.qmd
+    - ./ch00/mlops-stack.qmd
   
 format:
   html:

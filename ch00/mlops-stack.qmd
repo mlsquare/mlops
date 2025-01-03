@@ -1,0 +1,83 @@
+# 00A: MLOps Stack {.unnumbered}
+
+Date: Thursday, 02-Jan-2025\
+Author: Soma S Dhavala\
+Version: 0.1.0
+
+## Pre-work:
+
+1.  Refresh ML foundations.
+2.  Read "The 100 page ML book" by Andiry Burkov. Chapters accessible [here](https://themlbook.com/wiki/doku.php)
+3.  Read the [preface](./../preface.qmd) of *this* book
+
+## Lecture
+
+We will go over the [Deck](./ML-PODs-01-Jan-25.pdf). Video \[tbd\] {{< pdf ./ML-PODs-01-Jan-25.pdf width=100% height=500 >}}
+
+## Notes
+
+We like to address the question *Is developing ML software (and models) similar to developing (traditional) software?*. If not, what makes it different? What type of software tools, frameworks, processes are needed - both from Engineering (technology) and Science (techniques) point of view?
+
+### Software 2.0 - the Chief of Pain!
+
+[Andrej Karpathy](https://karpathy.ai/) is said to have coined the term [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) to refer modern day ML. If any thing, Software 2.0 is a different beast compared to Software 1.0 (the classical software). *Software 2.0 is a nascent field* as far as Enterprise-level maturity is concerned unlike Software 1.0 that has matured into a stable industry over a period of decades. Exceptions exists of course! The MAANGs and FAANGs of the world have figured how out to tame this beast into a profit-making technology. This know-how is a specialty and efforts are underway to democratize this knowledge.
+
+> ML Systems are stochastic systems
+
+-   *Functional requirements are codified in the data*, and not in an Software Require Specification (SRS/SRD/PRD) doc written by a Product Owner.
+-   *Behavior (expected functionality) is realized in opaque bytes*, and not written or programmed in formal languages by developers (human beings) but learnt from data.\
+-   *It can produce mistakes and errors* with probability greater than zero.
+-   *This provably-wrong-ness is the anti-thesis of determinism and reliability* that is expected of any (semi) autonomous systems.
+
+The design and build process must address these chief differences to build Enterprise-grade ML systems. It begets a different kind of technology (Engineering) debt and technique (Scientific Methods) debt. We briefly discuss them next.
+
+### Technology Debt
+
+Software Industry has largely figured out developing Enterprise IT applications with clearly established roles (Architects, Full Stack Developers, Data Engineers, Product Owners, Project Managers, SCRUM Masters, Testers, DevOps, Support, etc.), processes (Agile Methods, Distributed, Decentralized SDLCs, Continuous Delivery), tooling (Git, JIRA, etc.). Software Engineering best practices are codified into Design Patterns, Conventions Frameworks and Stacks (eg. WAMP, MEAN, MERN) so as to reduce the Tech Debt as much as possible. ML System Development can benefit from the IT & Software Industry in this regard and DevOps comes to the forefront. But ML Systems have more complexity than classical software systems.
+
+> Anything changes, everything changes.
+
+ML(AI) has has no common sense unlike us humans, and sees only the world it is trained on. Any variable in the equation - be it data, model, or the application context & situation change, the AI may not longer work as expected. This makes deploying and maintaining AI complicated.
+
+> Expect Future = Past.
+
+-   The development (of ML) is highly non-linear. Often, the problem to solve is not clear as it is *data* and *environment* dependent. In fact, part of the job is to discover what problem to solve (problem formulation), rather than building models (for a wrong problem).
+-   If the past (from which data was collected) and future (where the model is situated) diverge, models drift. And it wont be easy to fix. Observability becomes critical.
+
+> Clash of Dev and Prod cultures
+
+-   The skills sets to ideate, formulate, develop, deploy, monitor, improve, scale, and maintain are varied. When the programming languages are different between the Dev and Prod environments, it is referred to as the [two-language/env problem](https://discourse.julialang.org/t/two-language-problem-what-is-it/82925).
+-   A single person might not have the necessary breadth and depth to offer the build quality. And in some cases, POC stack & environment can be different from the Prod stack.
+-   Differences in the Dev and Prod environments can further exacerbate an already messy situation. In the ML the data and compute infrastructure requriements can be radically different in these two environments. Even the mindset will be different.
+-   Modern frameworks like [MetaFlow](https://metaflow.org/) address this key issue of idempotency. But again, no single tool/library/framework may be sufficient as no one size fits all. The emphasis and priority depend on type of the problem and the type of the organization. It can lead to over-engineering and premature optimization otherwise. Read [this](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) Google article on MLOps levels.
+
+> Model *ing* - not Models. System - not Models.
+
+-   As mentioned in the [preface](./../preface.qmd), it is difficult to not worry about models and *only* about models. Celebrities like [Andrew Ng](https://www.andrewng.org/) have to call out for [Data-Centric AI](https://spectrum.ieee.org/andrew-ng-data-centric-ai) to regain focus on data and its quality. Otherwise, expect to see garbage-in, garbage-out.
+-   But it is not just about data. It is also about the whole modeling process - right from data collection to post-deployment monitoring and improvement and everything in between. Model is all but one part of this data flow.
+-   Developing production-worthy models require aspects like testing, documentation, code quality, readability (of code), knowledge transfer (from one team member to another), which are often ignored in a model-centric workflow and mindset.
+
+### Technique Debt
+
+The Tech Debt can be addressed by adapting and extending DevOps. But there are many algorithms challenges to build trustworthy and reliable ML Systems. This incurs Technique/Methods debt.
+
+> Beyond Performance
+
+-   It is an unusual sight if a developer is not asked of model performance and whether the performance can be improved further. This is a symptom of model-centric thinking.
+-   But real world application may have different priorities. For example, a model that is explainable and interpretable is preferred to a slightly performant but black-box model.
+-   Many other aspects like Robustness, Security, Expandability could be important. What if the prediction changes when little bit of noise is added to the input?
+-   May be the model should communicate the uncertainty in the predictions so as to make the whole application trustworthy. Providing prediction intervals as opposed to communicating only point predictions could be important.
+-   Inputs and Outputs should be validated. Since AI is does not have common-sense, it resolves any prediction about the input into concepts it has seen in the dataset. For example, if the model is trained to classify an image as cat or dog, the prediction will always be either a dog or a cat. Therefore, it may be much better if the model can abstain from making predictions when it is unsure of the inputs and outputs.
+
+Excessive and obsessive worry about model improvements, while keeping the dataset fixed, is one of leading causes of premature and untimely death of AI initiatives. Battling this intellectual inertial is extremely hard.
+
+All of the above make Software 2.0 hard to formulate, develop, test, monitor, debug, control, improve, and maintain. At the same time, ensuring that the models are explainable, trustworthy, robust, secure, reliable, is a double whammy. Therefore, all software systems, tools, and process must address this core issue.
+
+### ML PODS
+
+We need right abstractions, conventions, reference stacks to address both Technology debt and Technique Debt. A git template that integrates many tools with specific responsibilities is needed. The goal is to support as many quality attribute as possible by delegating them to tools as much as possible. We refer to such a stack as *ML Pod*. Such a git template for supporting image-based workflows is under development [here](https://github.com/mlsquare/image-ml-pod). Read the documentation [here](https://mlsquare.github.io/image-ml-pod/docs/).
+
+### Further Reading
+
+1.  Read the motivation for MLOps from this [blog](https://ml-ops.org/content/motivation).
+2.  ML Life Cycle CRISP-ML9(Q): [blog](https://ml-ops.org/content/crisp-ml), [paper](https://arxiv.org/abs/2003.05155)
