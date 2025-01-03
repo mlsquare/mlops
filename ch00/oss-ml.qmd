@@ -3,22 +3,22 @@ Date: Thursday, 02-Jan-2025 \
 Author: Soma S Dhavala \
 Version: 0.1.0
 
-### Pre-work:
+## Pre-work:
 
 1.  Refresh ML foundations.
 2.  Read "The 100 page ML book" by Andiry Burkov. Chapters accessible [here](https://themlbook.com/wiki/doku.php)
 3.  Read the [preface](./../preface.qmd) of _this_ book
 
-### Lecture
+## Lecture
 
 We will go over the [Deck](./ML-PODs-01-Jan-25.pdf). Video [tbd]
 {{< pdf ./ML-PODs-01-Jan-25.pdf width=100% height=500 >}}
 
-### Notes
+## Notes
 
 We like to address the question _Is developing ML software (and models) similar to developing (traditional) software?_. If not, what makes it different? What type of software tools, frameworks, processes are needed - both from Engineering (technology) and Science (techniques) point of view?
 
-#### Software 2.0 - the Chief of Pain!
+### Software 2.0 - the Chief of Pain!
 
 [Andrej Karpathy](https://karpathy.ai/) is said to have coined the term [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) to refer modern day ML. If any thing, Software 2.0 is a different beast compared to Software 1.0 (the classical software).
 
@@ -33,7 +33,7 @@ We like to address the question _Is developing ML software (and models) similar 
 
 The design and build process must address these chief differences to build Enterprise-grade ML systems. It begets a different kind of technology (Engineering) debt and technique (Scientific Methods) debt. We briefly discuss them next.
 
-#### Technology Debt
+### Technology Debt
 
 Software Industry has largely figured out developing Enterprise IT applications with clearly established roles (Architects, Full Stack Developers, Data Engineers, Product Owners, Project Managers, SCRUM Masters, Testers, DevOps, Support, etc.), processes (Agile Methods, Distributed, Decentralized SDLCs, Continuous Delivery), tooling (Git, JIRA, etc.). Software Engineering best practices are codified into Design Patterns, Conventions Frameworks and Stacks (eg. WAMP, MEAN, MERN) so as to reduce the Tech Debt as much as possible. ML System Development can benefit from the  IT & Software Industry in this regard and DevOps comes to the forefront. But ML Systems have more complexity than classical software systems.
 
@@ -55,7 +55,7 @@ ML(AI) has has no common sense unlike us humans, and sees only the world it is t
 - But it is not just about data. It is also about the whole modeling process - right from data collection to post-deployment monitoring and improvement and everything in between. Model is all but one part of this data flow.
 - Developing production-worthy models require aspects like testing, documentation, code quality, readability (of code), knowledge transfer (from one team member to another), which are often ignored in a model-centric workflow and mindset.  
 
-#### Technique Debt
+### Technique Debt
 
 The Tech Debt can be addressed by adapting and extending DevOps. But there are many algorithms challenges to build trustworthy and reliable ML Systems. This incurs Technique/Methods debt.
 
@@ -72,7 +72,7 @@ Excessive and obsessive worry about model improvements, while keeping the datase
 
 All of the above make Software 2.0 hard to formulate, develop, test, monitor, debug, control, improve, and maintain. At the same time, ensuring that the models  are explainable, trustworthy, robust, secure, reliable, is a double whammy. Therefore, all software systems, tools, and process must address this core issue. 
 
-#### ML PODS
+### ML PODS
 
 We need right abstractions, conventions, reference stacks to address both Technology debt and Technique Debt. A git template that integrates many tools with specific responsibilities is needed. The goal is to support as many quality attribute as possible by delegating them to tools as much as possible. We refer to such a stack as _ML Pod_. Such a git template for supporting image-based workflows is under development [here](https://github.com/mlsquare/image-ml-pod). Read the documentation [here](https://mlsquare.github.io/image-ml-pod/docs/).
 
